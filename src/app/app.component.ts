@@ -8,9 +8,9 @@ import { interval, switchMap } from 'rxjs';
   selector: 'app-root',
   imports: [JsonPipe, AsyncPipe],
   template: `
-    <h1>Resource 1</h1>
+    <h1>RxResource 1</h1>
     <pre>{{ todoR.value() | json }}</pre>
-    <h1>Resource 2</h1>
+    <h1>Observable with async pipe (refreshes data)</h1>
     <pre>{{ todoObs$ | async | json }}</pre>
   `,
 })
